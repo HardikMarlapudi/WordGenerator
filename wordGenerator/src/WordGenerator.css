@@ -13,8 +13,9 @@
     display: block;
     border: 2px solid;
     border-radius: 0.5rem;
-    width: 45rem;
-    height: 15rem;
+    padding: 5px 10px;
+    width: auto;
+    height: auto;
 }
 
 #word {
