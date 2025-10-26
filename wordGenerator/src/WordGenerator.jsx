@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import axios from 'axios'
+import axios from 'axios';
 
 function WordGenerator() {
 
@@ -8,26 +8,27 @@ function WordGenerator() {
 
     const generateWord = async () => {
         try {
-            const response = await axios.get("https://api.api-ninjas.com/v1/dictionary?word=code", {
-                headers: {
-                    'X-Api-Key': '1QaEXXiMr42UQHgffVLNDA==uoRjZZaDnhJg5v1O',
-                    'Content-Type': 'application/json'
-                }
+            const response = await axios.get("https://api.api-ninjas.com/v1/dictionary?word=code",
+                 {
+                    headers: {
+                    "X-Api-Key": '1QaEXXiMr42UQHgffVLNDA==uoRjZZaDnhJg5v1O',
+                    'Content-Type': "application/json"
+                    }
             });
             const wordData = response.data;
             setWord(wordData.word);
             setDefinition(wordData.definition);
         } catch (error) {
-            console.error("Cannot fetch word", error);
+            console.error("Error fetching word", error);
         }
     }
 
     const copyWord = () => {
         if (word) {
             navigator.clipboard.writeText(word);
-            alert("Word has been copied");
+            alert("Word copied to clipboard");
         } else {
-            alert("Word has not been copied");
+            alert("Word not copied to clipboard");
         }
     }
 
