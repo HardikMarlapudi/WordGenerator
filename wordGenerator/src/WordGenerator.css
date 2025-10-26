@@ -13,8 +13,8 @@
     display: block;
     border: 2px solid;
     border-radius: 0.5rem;
-    width: 25rem;
-
+    width: 45rem;
+    height: 15rem;
 }
 
 #word {
@@ -45,7 +45,7 @@
 }
 
 #copyWord:hover {
-    background-color:rgb(238, 13, 13);
+    background-color:rgb(251, 0, 0);
 }
 
 #generateWord {

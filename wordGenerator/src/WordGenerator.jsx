@@ -8,13 +8,13 @@ function WordGenerator() {
 
     const generateWord = async () => {
         try {
-            const response = await axios.get("https://api.api-ninjas.com/v1/randomword", {
+            const response = await axios.get("https://api.api-ninjas.com/v1/dictionary?word=code", {
                 headers: {
                     'X-Api-Key': '1QaEXXiMr42UQHgffVLNDA==uoRjZZaDnhJg5v1O',
                     'Content-Type': 'application/json'
                 }
             });
-            const wordData = response.data[0];
+            const wordData = response.data;
             setWord(wordData.word);
             setDefinition(wordData.definition);
         } catch (error) {
