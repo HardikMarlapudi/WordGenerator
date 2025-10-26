@@ -25,9 +25,9 @@ function WordGenerator() {
     const copyWord = () => {
         if (word) {
             navigator.clipboard.writeText(word);
-            alert("Word has been copied");
+            alert("Word copied to clipboard");
         } else {
-            alert("Word has not been copied");
+            alert("Word not copied to clipboard");
         }
     }
 
