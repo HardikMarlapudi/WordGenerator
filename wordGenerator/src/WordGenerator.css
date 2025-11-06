@@ -13,15 +13,14 @@
     display: block;
     border: 0.5px solid;
     border-radius: 0.5rem;
-    padding: 5px 10px;
-    width: auto;
+    width: 30rem;
     height: auto;
 }
 
 #word {
     display: block;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
