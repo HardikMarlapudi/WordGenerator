@@ -37,7 +37,6 @@ function WordGenerator() {
         <h2 id="title">Word Generator</h2>
         <center><div className="border">
         <h4 id="word">{word}</h4>
-        <p id="meaning">{definition}</p>
         </div>
         </center>
         <center><button id="copyWord" onClick={copyWord}>Copy</button></center>
